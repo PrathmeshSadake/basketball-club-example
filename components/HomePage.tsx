@@ -9,12 +9,12 @@ export function HomePage() {
             <div className="grid gap-10 sm:grid-cols-2">
               <div className="space-y-4 max-w-[600px]">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  NYC Basketball Club
+                  Build Fast with AI
                 </h2>
 
                 <p className="text-gray-500 md:text-xl/relaxed dark:text-gray-400">
-                  We are a community of basketball enthusiasts who meet
-                  regularly to play and socialize.
+                  We are a community of AI enthusiasts who meet regularly to
+                  learn and socialize.
                 </p>
 
                 <p className="text-gray-500 md:text-xl/relaxed dark:text-gray-400">
@@ -24,9 +24,17 @@ export function HomePage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-3xl font-bold sm:text-xl md:text-3xl">
-                  Upcoming Events
-                </h2>
+                <div className="flex justify-between items-center mb-4">
+                  <h2 className="text-3xl font-bold sm:text-xl md:text-3xl">
+                    Upcoming Events
+                  </h2>
+                  <a
+                    href="/events"
+                    className="text-pink-500 hover:text-pink-700 dark:text-pink-400 dark:hover:text-pink-300"
+                  >
+                    View All Events
+                  </a>
+                </div>
 
                 <EventList />
               </div>
